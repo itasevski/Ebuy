@@ -1,0 +1,5 @@
+footer {
+  background-image: linear-gradient(to right, rgb(32, 32, 92), blue);
+  margin-bottom: -500px;
+  width: 100%;
+}

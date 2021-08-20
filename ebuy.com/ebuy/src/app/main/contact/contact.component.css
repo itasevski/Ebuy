@@ -1,0 +1,12 @@
+h1,
+label {
+  color: white;
+}
+.btn-send {
+  max-width: 35%;
+  margin-right: 40px;
+}
+
+.btn-secondary {
+  width: 35%;
+}

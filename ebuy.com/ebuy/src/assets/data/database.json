@@ -1,0 +1,108 @@
+{
+  "Tickets": [
+    {
+      "id": 1,
+      "eventTitle": "Sabaton",
+      "price": 100,
+      "discount": 20,
+      "location": "Woodstock, Poland",
+      "date": "6/7/2012",
+      "imageUrl": "http://s2.wosp.org.pl/uploaded/files/images/woodstock/01_sabaton_okladka_front_zmiany_podglad.jpg",
+      "isFavourite": true,
+      "description": "Front row and back row",
+      "quantity": 0
+    },
+    {
+      "id": 2,
+      "eventTitle": "Michael Jackson",
+      "price": 50,
+      "discount": 15,
+      "location": "Chicago, USA",
+      "date": "6/12/1998",
+      "imageUrl": "https://miro.medium.com/max/400/1*aS5L5Nw8mauLaaYv9yciWw.jpeg",
+      "isFavourite": false,
+      "description": "5th section, 12th row",
+      "quantity": 0
+    },
+    {
+      "id": 3,
+      "eventTitle": "Lady Gaga",
+      "price": 150,
+      "discount": 50,
+      "location": "Atlanta, USA",
+      "date": "12/1/2019",
+      "imageUrl": "https://i.ytimg.com/vi/qrO4YZeyl0I/maxresdefault.jpg",
+      "isFavourite": false,
+      "description": "Back row, 12th seat",
+      "quantity": 0
+    }
+  ],
+  "Accounts": [
+    {
+      "id": 1,
+      "username": "bojanpetkovski18",
+      "email": "petkovski.bojan18@gmail.com",
+      "password": "$2a$10$YrftZf2I.Ka9CUkkuBIvdOP9XBDAxO7B..GSE1uDVXvie/rMDCvZC",
+      "isLoggedIn": false
+    },
+    {
+      "id": 2,
+      "username": "damjan21",
+      "email": "boshkovski.damjan21@gmail.com",
+      "password": "$2a$10$AB3/sg0c4yihtSi1GS2XyeiIzwVJS8tAbDFwQ0R9Z3wWYGtI.vUdi",
+      "isLoggedIn": false
+    },
+    {
+      "id": 3,
+      "username": "itasevski",
+      "email": "tasevski.ivo26@gmail.com",
+      "password": "$2a$10$3uwpgxz8y0UAPDSnHVllpufFxGYuLPyoLptETtijp7HA60o8.sR4C",
+      "isLoggedIn": false
+    },
+    {
+      "username": "asd",
+      "email": "asd@asd",
+      "password": "$2a$10$jl/lmUefT1WBmAl75.Rwsej6wx5TSSlTnPuXSwbHkEyd6EfkGwjO2",
+      "isLoggedIn": true,
+      "id": 4
+    }
+  ],
+  "Purchases": [
+    {
+      "name": "$2a$10$L2wUA1MqvN.6tBV7za6Fe.FVNBsJiH6E6GmqUJXy5UXpkK7NLmonK",
+      "address": "$2a$10$u7onhCbRAlLDWWdE.V.JquR4N8XGn/9kkM7FMmye.MTp5p7ckfI4a",
+      "method": "$2a$10$8nVjSQP8Jp1iWDzegmahqe4HY82cgECTdiqg7pY8bvjEApmCeaW3O",
+      "number": "$2a$10$Vz6O6uOrHVfRMBoDyBjQdeDAXocOXbTLFFaE.CbsRVrBbGPWgXgXO",
+      "expiration": "$2a$10$W0Ubm5SPA9qn3/7sTmQ4aeOVlE7XFWeBdxjiHB69BI2.PbjeQXdLa",
+      "cvc": "$2a$10$t.r7DEetDH9aXNR1JCQr/umdCkB6EgshxMiazlLnM0MW9sUzBCZoK",
+      "id": 1
+    },
+    {
+      "name": "$2a$10$cKqOo1iox6wtwYndynMkdOWiGkV3MwjvD6N41sXCkWARQ9GRd8v1q",
+      "address": "$2a$10$WgmcxRegNjU6Sdwutrq3G.gL7SBMveMQ4gfuqR3n3XQHhrvNvn9BK",
+      "method": "$2a$10$gqTpwqJCqB4nKsXlWJabXO20k6qysWXnr1YFk6.yg5NGNZyCJxvyG",
+      "number": "$2a$10$7Z4UWbr0mGVhbLy.DxQ4Fuqz/zTupFZ8Pu6yHaUP.F/KKdO4cJ94i",
+      "expiration": "$2a$10$f8wlnijd/v1oc9XYE1HD5.PV1ZjZxL5OI3ts5Lln.7Rv3TNJCsLA6",
+      "cvc": "$2a$10$GS4nKKHggUDbHCmWK9FzpeJHOcNVI85uXMO4GC7LmjxhCB7Chm4Hi",
+      "id": 2
+    },
+    {
+      "name": "$2a$10$AbWqYr77rGcKRWnq86s7O.bE/ZNTg0f4i4MGKGnXVFw5SVRSYP7qK",
+      "address": "$2a$10$zjZuAf4qIEeQ/N6GVXomYum2pkjFMrqJQeP4UMDwRkAI46.DScJEu",
+      "method": "$2a$10$wl5VWxG3zpmBF3EIum4GwuKGSWgYobo5kLDajiiRci8KKRBs9q.Sa",
+      "number": "$2a$10$bi22p81ehh6I/Yj4ItDVBOn3tVfCPD7UgMSvT0grhbX9cpnuBLB9.",
+      "expiration": "$2a$10$rtWxSgmtWPQjT5tAViV7i.RXCP08CO5hL/gNe7wy2aA36cQtQ1kvK",
+      "cvc": "$2a$10$IZCmqsxh/L6Zvh1R2bjTqeDG/vDiHx9mKspWnXw3zTsfAszxQYfbq",
+      "id": 3
+    },
+    {
+      "name": "asda",
+      "address": "asdasd",
+      "method": "master",
+      "number": "123",
+      "expiration": "11/11",
+      "cvc": "123",
+      "id": 4
+    }
+  ]
+}

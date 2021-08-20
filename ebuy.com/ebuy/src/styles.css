@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins" !important;
+  font-weight: 600;
+  background-color: white;
+  background-image: url("./assets/images/bg.jpg") !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  overflow-x: hidden !important;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

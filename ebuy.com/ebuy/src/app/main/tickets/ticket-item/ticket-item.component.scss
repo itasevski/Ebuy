@@ -1,0 +1,81 @@
+.a {
+  text-decoration: none;
+}
+
+.member-card {
+  padding: 30px;
+  background-image: linear-gradient(to left, #000000, #0a0a31);
+  color: white;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid black;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.83);
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  margin: 10px;
+  border-radius: 15px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+.member-card img {
+  width: 64px;
+  height: 64px;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.733);
+}
+.member-card .member-card-details {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+.member-card .member-card-details .member-position {
+  opacity: 0.8;
+  font-size: 12px;
+  font-weight: 600;
+}
+.member-card .member-card-details .member-name {
+  color: white;
+  font-size: 18.5px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.member-card .btn-fired:hover {
+  color: red;
+  cursor: pointer;
+}
+
+button {
+  border-radius: 10px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.371);
+}
+
+a {
+  text-decoration: none;
+}
+
+.tickets-left {
+  color: rgb(201, 59, 201);
+  position: absolute;
+  font-weight: 1000;
+  margin-left: -85px;
+  margin-top: -5px;
+  transform: rotate(-40deg);
+  padding: 1px;
+  font-size: 14px;
+}
+
+.move-pos {
+  margin-left: -90px;
+  margin-top: -2.5px;
+}
+
+.member-price {
+  position: absolute;
+  right: 20%;
+  font-size: 20px;
+  color: greenyellow;
+}
+
+.modal {
+  margin-top: 200px;
+}

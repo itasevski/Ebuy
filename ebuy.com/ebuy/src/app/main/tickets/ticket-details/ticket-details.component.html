@@ -1,0 +1,68 @@
+<div class="container" *ngIf="currentTicket">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="image-wrapper">
+        <div class="detail-title mb-3">
+          <h2>{{ currentTicket.eventTitle }}
+          </h2>
+          <p style="font-size: 25px; position: absolute; left: 170%; top: 0.5%">
+            <span class="text-danger m-2" style="font-size: 16px;"><del>${{currentTicket.price}}</del></span>
+            <span class="text-success">${{currentTicket.price - ((currentTicket.discount/100 *
+              currentTicket.price))}}</span>
+          </p>
+          <hr style="width: 205%;">
+          <p>{{ currentTicket.location }} &nbsp; | &nbsp; {{ currentTicket.date }} &nbsp; | &nbsp; <i>{{
+              currentTicket.quantity }} tickets left!</i>
+          </p>
+        </div>
+        <img src="{{ currentTicket.imageUrl }}" title="{{ currentTicket.eventTitle }}">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="detail-body mt-5">
+        <form class="form-group pt-5" #currentPurchaseForm="ngForm" (ngSubmit)="buyTicket(currentPurchaseForm)">
+          <div class="mb-3">
+            <label for="name"><i class="fas fa-user-alt"></i> Name:</label>
+            <input type="text" class="form-control" required [(ngModel)]="name" name="name">
+          </div>
+          <div class="mb-3">
+            <label for="address"><i class="fas fa-map-marker-alt"></i> Address:</label>
+            <input type="text" class="form-control" required [(ngModel)]="address" name="address">
+          </div>
+          <div class="mb-3">
+            <label for="options"><i class="fas fa-th-large"></i> Payment Method:</label>
+            <select class="form-select form-control" required [(ngModel)]="method" name="method">
+              <option selected>Select a card</option>
+              <option value="visa">Visa Card</option>
+              <option value="master">Master Card</option>
+              <option value="maestro">Maestro</option>
+              <option value="paypal">Paypal</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="number"><i class="fas fa-address-card"></i> Card Number:</label>
+            <input type="text" class="form-control" required [(ngModel)]="number" name="number">
+          </div>
+          <div class="mb-3">
+            <label for="exp"><i class="fas fa-calendar-times"></i> Expiration Date:</label>
+            <input type="text" class="form-control" placeholder="mm/yy" required [(ngModel)]="expiration"
+              name="expiration">
+          </div>
+          <div class="mb-3">
+            <label for="cvc"><i class="fas fa-dice-three"></i> CVC:</label>
+            <input type="text" class="form-control" placeholder="###" required [(ngModel)]="cvc" name="cvc">
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-success w-50" [disabled]="!currentTicket.quantity">
+              BUY </button>
+            <button class="btn btn-secondary" (click)="onBack()"><i class="fas fa-chevron-left"></i>
+            </button>
+          </div>
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+</div>

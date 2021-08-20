@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <h1>
+    <img src="../../../assets/images/fave.png">
+  </h1>
+  <hr>
+  <div *ngIf="listFavourites.length">
+    <div class="row m-2" *ngFor="let item of listFavourites">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 m-2">
+        <app-ticket-item [ticket]="item"></app-ticket-item>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</div>

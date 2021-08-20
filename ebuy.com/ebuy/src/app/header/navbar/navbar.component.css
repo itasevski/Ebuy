@@ -1,0 +1,58 @@
+nav {
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 65px;
+  width: 100%;
+  background-image: linear-gradient(to right, rgb(32, 32, 92), blue);
+  margin-bottom: 60px;
+  font-weight: 700;
+  opacity: 0.95;
+  box-shadow: 4px 4px 20px black;
+}
+
+.navbar-collapse,
+.navbar-collapse ul {
+  height: 100%;
+}
+
+.navbar-collapse .nav-link {
+  padding-top: 18px;
+}
+
+a {
+  color: white;
+}
+
+.navbar-brand {
+  margin-right: 50px;
+}
+
+.active {
+  border-bottom: 5px solid rgb(133, 44, 118);
+}
+
+.navbar-nav {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+img {
+  max-width: 75px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  transition: 0.5s;
+}
+
+img:hover {
+  transition: 0.51s;
+  transform: rotate(180deg);
+}
+
+.modal {
+  top: 20%;
+}

@@ -1,0 +1,23 @@
+<div class="member-card" *ngIf="ticket">
+  <div class="member-pic" routerLink="/tickets/{{ticket.id}}" [title]="ticket.eventTitle">
+    <img class="member-pic rounded-circle" src="{{ticket.imageUrl}}" />
+    <span class="tickets-left bg-dark" [ngClass]="ticket.quantity ? '' : 'text-danger move-pos'">{{(ticket.quantity) ?
+      ticket.quantity + ' LEFT' : 'SOLD OUT' }}</span>
+  </div>
+  <div class="member-card-details" routerLink="/tickets/{{ticket.id}}">
+    <a>
+      <div class="member-name">{{ticket.eventTitle}}
+      </div>
+    </a>
+    <div class="member-position">{{ticket.location}}</div>
+  </div>
+  <div class="member-price">
+    <span class="text-danger m-2" style="font-size: 16px;"><del>${{ticket.price}}</del></span>
+    <span>${{ticket.price - ((ticket.discount/100 * ticket.price))}}</span>
+  </div>
+  <button [title]="ticket.quantity ? 'Buy a ticket' : 'Out of stock!'" class="btn bg-dark m-1 text-white"
+    routerLink="/tickets/{{ticket.id}}" [disabled]="!ticket.quantity"><i class="fas fa-shopping-bag"></i> Buy</button>
+  <button [title]="ticket.isFavourite ? 'Remove from Favourites' : 'Add to Favourites'" class="btn bg-dark m-1"
+    [ngClass]="ticket.isFavourite ? 'text-warning' : 'text-light'" (click)="addToFaveourites(ticket)"><i
+      class="fas fa-star"></i></button>
+</div>
